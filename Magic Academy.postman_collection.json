@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "53336906-4c19-4da6-87a2-5e897d1d265c",
+		"name": "Magic Academy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Pedro\",\n    \"last_name\": \"valencia\",\n    \"gender\":\"hombre\",\n    \"birth_date\": \"10-08-1992\",\n    \"social_status\": \"plebeyo\",\n    \"region\": \"Poza Rica\",\n    \"magical_affinity\": \"viento\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/register/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update request",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Pedro\",\n    \"last_name\": \"valencia\",\n    \"gender\":\"hombre\",\n    \"birth_date\": \"10-08-1993\",\n    \"social_status\": \"plebeyo\",\n    \"region\": \"Poza Rica\",\n    \"magical_affinity\": \"viento\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/register/{{uuid}}/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"register",
+						"{{uuid}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update status",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accepted\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/update_status/{{uuid}}/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"update_status",
+						"{{uuid}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete request",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/register/{{uuid}}/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"register",
+						"{{uuid}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/registration/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/register/{{uuid}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"register",
+						"{{uuid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all grimorios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token {{user_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/grimorios/grimorios",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"grimorios",
+						"grimorios"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "Token {{user_token}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "user_token",
+			"value": "4a2e4ac8c18e3e4c11bc3e1c9be46d1ecef45b71"
+		},
+		{
+			"key": "host",
+			"value": "http://0.0.0.0:8000"
+		},
+		{
+			"key": "uuid",
+			"value": "81d63238-0f7a-4bce-b13b-585cbf98881e"
+		}
+	]
+}
