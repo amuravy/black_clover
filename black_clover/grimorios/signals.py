@@ -9,7 +9,6 @@ from black_clover.grimorios.models import Grimorio, Profile
 
 @receiver(post_save, sender=Profile)
 def create_grimorio(sender, instance, **kwargs):
-    logging.info("SAVEEE")
     if instance.status == Profile.ACCEPTED:
         grimorio = Grimorio.objects.create(profile=instance, cover=randrange(1, 5))
         if grimorio.cover == 4:
