@@ -40,6 +40,7 @@ Se utilizó el project template "cookiecutter-django" ya que la considero una he
 ### Comentarios
 -   Se utilizo signals para identificar cambios post-save.
 -   Se entiende que ni docker ni cookie-cutter son parte de la prueba. Sin embargo defiendo mi idea de utilizarlo para un proyecto màs completo.
+-   La coleccion de Postman se encuentra en este proyecto con el nombre de "Magic Academy", fue exportada como "Collection v2.1"
 
 ### Docker
 
